@@ -1,0 +1,70 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/lord_faceless/RiderProjects/Walkhorn/Walkhorn-Tests/Walkhorn-Tests.csproj": {}
+  },
+  "projects": {
+    "/home/lord_faceless/RiderProjects/Walkhorn/Walkhorn-Tests/Walkhorn-Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/lord_faceless/RiderProjects/Walkhorn/Walkhorn-Tests/Walkhorn-Tests.csproj",
+        "projectName": "Walkhorn-Tests",
+        "projectPath": "/home/lord_faceless/RiderProjects/Walkhorn/Walkhorn-Tests/Walkhorn-Tests.csproj",
+        "packagesPath": "/home/lord_faceless/.nuget/packages/",
+        "outputPath": "/home/lord_faceless/RiderProjects/Walkhorn/Walkhorn-Tests/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/lord_faceless/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[5.9.0, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.2.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[3.13.0, )"
+            },
+            "nunit": {
+              "target": "Package",
+              "version": "[3.12.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

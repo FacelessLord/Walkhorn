@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp3.0</TargetFramework>
+        <RootNamespace>Walkhorn_Core</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Folder Include="Checker" />
+      <Folder Include="Processors" />
+      <Folder Include="Proxy" />
+      <Folder Include="Window" />
+    </ItemGroup>
+
+</Project>

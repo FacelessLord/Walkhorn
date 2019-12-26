@@ -1,0 +1,7 @@
+Walkhorn-Core/obj
+Walkhorn-Core/bin
+Walkhorn-Tests/obj
+Walkhorn-Tests/bin
+.idea
+
+*.cache

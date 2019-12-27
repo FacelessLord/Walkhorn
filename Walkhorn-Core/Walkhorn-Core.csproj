@@ -13,4 +13,12 @@
       <Folder Include="Window" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\FLogger\FLogger.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
+    </ItemGroup>
+
 </Project>

@@ -5,3 +5,7 @@ Walkhorn-Tests/bin
 .idea
 
 *.cache
+
+*.props
+
+FLogger/obj/

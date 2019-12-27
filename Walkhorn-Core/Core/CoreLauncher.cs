@@ -7,11 +7,11 @@ namespace Walkhorn_Core.Core
     {
         public static Configuration GameConfiguration = new Configuration();
         public static GameRegistry GameRegistry= new GameRegistry();
-        
+
         static void Main(string[] args)
         {
             Globals.Load();
-            GameConfiguration.LoadFromFile(Globals.GetConfigurationDestination());
+            GameConfiguration = Configuration.LoadFromFile(Globals.GetConfigurationDestination());
             GameRegistry.LoadRegistries(GameConfiguration);
             //TODO Load Processors
             ////TODO Load Window

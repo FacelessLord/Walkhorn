@@ -1,25 +1,39 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text.Json.Serialization;
+using FLogger;
+using Newtonsoft.Json;
 
 namespace Walkhorn_Core.Configurations
 {
     public class Configuration
     {
+        public bool DebugMode = true;
+        public static Logger Logger = new Logger("Configuration");
+
         public Configuration()
         {
         }
 
-        public void LoadFrom(IEnumerable<string> config)
+        public static Configuration LoadFrom(IEnumerable<string> config)
         {
-            //TODO Load Configuration
-            throw new NotImplementedException();
+            return JsonConvert.DeserializeObject<Configuration>(config.Aggregate((a, b) => a + '\n' + b));
         }
 
-        public void LoadFromFile(string file)
+        public static Configuration LoadFromFile(string file)
         {
-            //TODO Read Text From File and Call LoadFrom
-            throw new NotImplementedException();
+            if (File.Exists(file)) return LoadFrom(File.ReadLines(file));
+
+            Logger.Warning($"Configuration file {file} doesn't exist. Using default configuration.");
+            return new Configuration();
+        }
+
+        public void SaveToFile(string file)
+        {
+            File.WriteAllText(file, JsonConvert.SerializeObject(this));
         }
     }
 }

@@ -1,9 +1,6 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text.Json.Serialization;
 using FLogger;
 using Newtonsoft.Json;
 
@@ -12,11 +9,7 @@ namespace Walkhorn_Core.Configurations
     public class Configuration
     {
         public bool DebugMode = true;
-        public static Logger Logger = new Logger("Configuration");
-
-        public Configuration()
-        {
-        }
+        private static Logger Logger = new Logger("Configuration");
 
         public static Configuration LoadFrom(IEnumerable<string> config)
         {
@@ -28,7 +21,9 @@ namespace Walkhorn_Core.Configurations
             if (File.Exists(file)) return LoadFrom(File.ReadLines(file));
 
             Logger.Warning($"Configuration file {file} doesn't exist. Using default configuration.");
-            return new Configuration();
+            var config = new Configuration();
+            config.SaveToFile(file);
+            return config;
         }
 
         public void SaveToFile(string file)

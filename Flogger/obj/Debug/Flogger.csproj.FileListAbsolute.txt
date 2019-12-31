@@ -1,0 +1,5 @@
+/home/lord_faceless/RiderProjects/Walkhorn/Flogger/bin/Debug/Flogger.exe
+/home/lord_faceless/RiderProjects/Walkhorn/Flogger/bin/Debug/Flogger.pdb
+/home/lord_faceless/RiderProjects/Walkhorn/Flogger/obj/Debug/Flogger.csprojAssemblyReference.cache
+/home/lord_faceless/RiderProjects/Walkhorn/Flogger/obj/Debug/Flogger.exe
+/home/lord_faceless/RiderProjects/Walkhorn/Flogger/obj/Debug/Flogger.pdb

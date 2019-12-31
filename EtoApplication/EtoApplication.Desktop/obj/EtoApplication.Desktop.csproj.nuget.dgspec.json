@@ -1,0 +1,112 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/lord_faceless/RiderProjects/Walkhorn/EtoApplication/EtoApplication.Desktop/EtoApplication.Desktop.csproj": {}
+  },
+  "projects": {
+    "/home/lord_faceless/RiderProjects/Walkhorn/EtoApplication/EtoApplication.Desktop/EtoApplication.Desktop.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/lord_faceless/RiderProjects/Walkhorn/EtoApplication/EtoApplication.Desktop/EtoApplication.Desktop.csproj",
+        "projectName": "EtoApplication.Desktop",
+        "projectPath": "/home/lord_faceless/RiderProjects/Walkhorn/EtoApplication/EtoApplication.Desktop/EtoApplication.Desktop.csproj",
+        "packagesPath": "/home/lord_faceless/.nuget/packages/",
+        "outputPath": "/home/lord_faceless/RiderProjects/Walkhorn/EtoApplication/EtoApplication.Desktop/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/lord_faceless/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net461"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net461": {
+            "projectReferences": {
+              "/home/lord_faceless/RiderProjects/Walkhorn/EtoApplication/EtoApplication/EtoApplication.csproj": {
+                "projectPath": "/home/lord_faceless/RiderProjects/Walkhorn/EtoApplication/EtoApplication/EtoApplication.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net461": {
+          "dependencies": {
+            "Eto.Forms": {
+              "target": "Package",
+              "version": "[2.5.0-rc.4, )"
+            },
+            "Eto.Platform.Gtk": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "Eto.Platform.Mac64": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "Eto.Platform.Wpf": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/lord_faceless/RiderProjects/Walkhorn/EtoApplication/EtoApplication/EtoApplication.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/lord_faceless/RiderProjects/Walkhorn/EtoApplication/EtoApplication/EtoApplication.csproj",
+        "projectName": "EtoApplication",
+        "projectPath": "/home/lord_faceless/RiderProjects/Walkhorn/EtoApplication/EtoApplication/EtoApplication.csproj",
+        "packagesPath": "/home/lord_faceless/.nuget/packages/",
+        "outputPath": "/home/lord_faceless/RiderProjects/Walkhorn/EtoApplication/EtoApplication/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/lord_faceless/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard1.6"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard1.6": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard1.6": {
+          "dependencies": {
+            "Eto.Forms": {
+              "target": "Package",
+              "version": "[2.5.0-rc.4, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.6.1, )",
+              "autoReferenced": true
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.0.101/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

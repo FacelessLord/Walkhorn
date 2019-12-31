@@ -7,17 +7,18 @@ namespace Walkhorn_Core
     {
         public static char PathSeparator { get; private set; }
 
-        public static string Path { get; private set; }
-        public static string RelativeConfigurationPath { get; private set; }
+        public static string PathBase { get; private set; } = "Walkhorn";
+        public static string ConfigurationFolder { get; private set; } = "config";
+        public static string ConfigurationFileName { get; private set; } = "config.cfg";
 
         public static void Load()
         {
-            PathSeparator = System.IO.Path.PathSeparator;
+            PathSeparator = '/';
         }
 
         public static string GetConfigurationDestination()
         {
-            return Path + PathSeparator + RelativeConfigurationPath;
+            return ConfigurationFileName;//PathBase + PathSeparator + ConfigurationFolder + PathSeparator + ConfigurationFileName
         }
     }
 }
